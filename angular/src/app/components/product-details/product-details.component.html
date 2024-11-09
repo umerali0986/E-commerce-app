@@ -1,0 +1,24 @@
+<p class="product-details-txt">Product Details</p>
+<div class="product-info-container">
+<img src="../../../assets/Products/{{productCategory}}/{{product.imageUrl}}.jpg" alt="product-img">
+<p>{{product.name}}</p>
+<div class="price-quantity-container">
+    <p>Price: <span style="color: #366397;">${{product.price}}</span></p>
+    <p>In stock: <span style="color: #B5714B;">{{product.amountInStock}}</span></p>
+</div>
+<button>Add to cart</button>
+</div>
+
+<div class="desc-container">
+    <p class="desc-txt">Description</p>
+    <hr>
+    <p>{{product.description}}</p> 
+</div>
+
+<p style="color: #366397; 
+          font-weight: 500;
+          margin-top: 30px;
+          align-items: end;
+          cursor: pointer;"
+    (click)="handleBackToProduct()">
+          	&lt;&lt; Back to products</p>

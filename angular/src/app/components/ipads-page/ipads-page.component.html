@@ -1,0 +1,12 @@
+<main>
+    <div class="Product-container" *ngFor="let ipad of ipads">
+      <div class="image-container">
+         <img (click)="displayProductDetails(ipad.id)"  src="../../../assets/Products/Ipads/{{ipad.imageUrl}}.jpg" alt="ipad-image">
+      </div>
+      <p (click)="displayProductDetails(ipad.id)">{{ipad.name}}</p>
+      <div class="price-container">
+        <p>${{ipad.price}}</p>
+        <button>Add to cart</button>
+      </div>
+    </div>
+  </main>

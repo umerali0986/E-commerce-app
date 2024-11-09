@@ -1,0 +1,13 @@
+<main>
+    <div class="Product-container" *ngFor="let book of books">
+      <div class="image-container">
+         <img (click)="displayProductDetails(book.id)" src="../../../assets/Products/Books/{{book.imageUrl}}.jpg" alt="Book-image">
+      </div>
+      <p (click)="displayProductDetails(book.id)">{{book.name}}</p>
+      <div class="price-container">
+        <p>${{book.price}}</p>
+        <button>Add to cart</button>
+      </div>
+    </div>
+  </main>
+  

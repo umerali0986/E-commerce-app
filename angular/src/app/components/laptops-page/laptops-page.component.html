@@ -1,0 +1,12 @@
+<main>
+    <div class="Product-container" *ngFor="let laptop of laptops">
+      <div class="image-container">
+         <img (click)="displayProductDetails(laptop.id)" src="../../../assets/Products/Laptops/{{laptop.imageUrl}}.jpg" alt="laptop-image">
+      </div>
+      <p (click)="displayProductDetails(laptop.id)">{{laptop.name}}</p>
+      <div class="price-container">
+        <p>${{laptop.price}}</p>
+        <button>Add to cart</button>
+      </div>
+    </div>
+  </main>

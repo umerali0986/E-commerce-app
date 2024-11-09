@@ -1,0 +1,21 @@
+<header>
+  <div>
+    <p (click)="handleBooks()">Phoenix</p>
+    <div class="search-bar-container">
+      <input type="text" placeholder="Search products..." />
+      <img src="../../assets/cart_icon.jpg" alt="Cart-icon" />
+    </div>
+  </div>
+
+</header>
+
+<!-- **** Side bar **** -->
+<nav>
+  <p style="margin-top: 40px" (click)="handleBooks()" routerLink="/books">• Books</p>
+  <p (click)="handleLaptops()">• Laptop</p>
+  <p (click)="handleIpads()">• Ipad</p>
+  <p (click)="handlePhones()">• Phone</p>
+</nav>
+
+<!-- main container -->
+<router-outlet></router-outlet>

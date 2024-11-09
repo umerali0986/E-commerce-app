@@ -1,0 +1,89 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    background-color: rgb(229, 229, 229);
+    padding-top: 80px;
+    padding-bottom: 50px;
+    font-family: roboto ,Arial,sans-serif;
+    padding-left: 180px;
+    
+}
+
+
+p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+main{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 50px;
+
+}
+
+.Product-container{
+    background-color: rgb(231, 231, 231);
+    width: 200px;
+    height: auto;
+    border-radius: 7px;
+    box-shadow: 2px 4px 7px 3px rgba(0, 0, 0, 0.3);
+}
+
+.image-container {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 7px;
+    border-top-left-radius: 7px;
+    border-top-right-radius:7px ;
+    cursor: pointer;
+}
+
+.image-container img{
+    align-items: center;
+    width: 140px;
+    height: 100%;
+    object-fit:contain;
+    
+}
+
+.Product-container p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.price-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 6px;
+   
+}
+
+.price-container p{
+    font-size: 17px;
+    padding-left: 10px;
+    font-weight: 500;
+    color: #366397;
+}
+
+.price-container button{
+    cursor: pointer;
+    border-radius: 7px;
+    border: none;
+    background-color: #1C283B;
+    color: white;
+    font-weight: bold;
+    padding: 0px 10px;
+    transition: box-shadow 0.3s;
+}
+
+.price-container button:hover{
+    box-shadow: -2px -2px 4px rgba(0, 0, 0, 0.3);
+
+}
